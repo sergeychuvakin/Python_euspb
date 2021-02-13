@@ -1,10 +1,54 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[a4paper,11pt]{article}
+%pdflatex
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[russian]{babel}	
+\usepackage{indentfirst}
+\frenchspacing
 
-\title{Syllabus EU SPb}
+%математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma}
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
 
-\author{Sergey Chuvakin }
-\date{February 2021}
+\usepackage{extsizes} % Возможность сделать экстрашрифт
+\usepackage{geometry} 
+\geometry{top=30mm}
+\geometry{bottom=40mm}
+\geometry{left=30mm}
+\geometry{right=20mm}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+	unicode=true,           % русские буквы в раздела PDF
+	pdftitle={Заголовок},   % Заголовок
+	pdfauthor={Автор},      % Автор
+	pdfsubject={Тема},      % Тема
+	pdfcreator={Создатель}, % Создатель
+	pdfproducer={Производитель}, % Производитель
+	pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
+	colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+	linkcolor=black,          % внутренние ссылки
+	citecolor=black,        % на библиографию
+	filecolor=magenta,      % на файлы
+	urlcolor=blue           % на URL
+}
+\author{Чувакин С., Румянцева А.}
+\title{Python как язык программирования для анализа данных и разработки}
+\date{\today}
+
+\let\endtitlepage\relax % убрать pagebreak после titlepage
+\usepackage{enumitem} % цветные itemize (xcolor)
+\setcounter{secnumdepth}{0} % убрать нумерацию секций
+
+\usepackage{csquotes}
 
 \begin{document}
 
